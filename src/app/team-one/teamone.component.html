@@ -1,0 +1,18 @@
+<div class="teamOne" >
+    <div class="teamOne-wrapper">
+        <home></home>
+        <div class="teamDetails" *ngIf="teamOne">
+            <div class="teamOne-title">PHOTO DETAILS</div>
+            <div class="member-detail">
+                <ul>
+                    <li *ngFor="let team1 of  teamOne">
+                        <span class="id">{{team1.title}}</span>
+                        <div class="thumbnail">
+                            <img [src]='team1.thumbnailv1' width='100%' height='auto' class='original' />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

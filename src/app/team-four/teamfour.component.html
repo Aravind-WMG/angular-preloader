@@ -1,0 +1,16 @@
+<div class="teamFour">
+    <div class="teamFour-wrapper">
+        <home></home>
+        <div class="teamDetails" *ngIf="teamFour">
+            <div class="teamFour-title">PHOTO DETAILS</div>
+            <div class="member-detail">
+                <ul>
+                    <li *ngFor="let team1 of  teamFour">
+                        <div class="id">{{team1.id}}</div>
+                        <div class="title">{{team1.title}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

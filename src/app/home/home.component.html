@@ -1,0 +1,7 @@
+<div class="home-page">
+    <div class="home-page-wrapper">
+        <div class="block" *ngFor="let team of teams;">
+            <a routerLink="{{team.path}}" routerLinkActive="active">{{team.name}}</a>
+        </div>
+    </div>
+</div>
