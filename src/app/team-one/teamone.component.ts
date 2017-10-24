@@ -1,6 +1,6 @@
+import { TeamOneService } from './../shared/teamone.service';
 import { LoaderService } from './../shared/loader';
 import {Component,Input,OnInit} from '@angular/core';
-import {TeamOneService} from './teamone.service'
 
 @Component({
     selector:'teamone',
@@ -33,5 +33,9 @@ export class TeamOneComponent{
             }
         );
     }    
+    isLoaded(event){
+        event.target.parentElement.classList.add("loaded")
+        event.target.parentElement.nextElementSibling.classList.add("removeLoaded");
+      }
 
 }

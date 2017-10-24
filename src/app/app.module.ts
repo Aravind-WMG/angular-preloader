@@ -1,3 +1,4 @@
+import { AppComponent } from './app.component';
 import { LoaderService } from './shared/loader';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -5,9 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
-
-import { AppComponent } from './app.component';
-import{routing} from './app-routes';
+import { AppRoutingModule } from './routing/routing.module';
 
 import{ HomeComponent } from'./home/home.component';
 import { TeamOneComponent }  from './team-one/teamone.component';
@@ -17,7 +16,7 @@ import { TeamFourComponent }  from './team-four/teamfour.component';
 import { TeamFiveComponent }  from './team-five/teamfive.component';
 
 import{HomeService} from './home/home.service';
-import{TeamOneService} from './team-one/teamone.service';
+import{TeamOneService} from './shared/teamone.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,7 @@ import{TeamOneService} from './team-one/teamone.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    AppRoutingModule
   ],
   providers: [HomeService,TeamOneService,LoaderService],
   bootstrap: [AppComponent]

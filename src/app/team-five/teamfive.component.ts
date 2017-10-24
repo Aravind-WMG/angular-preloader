@@ -1,5 +1,5 @@
 import { LoaderService } from './../shared/loader';
-import { TeamOneService } from './../team-one/teamone.service';
+import { TeamOneService } from './../shared/teamone.service';
 import { Component } from '@angular/core';
 
 @Component({
