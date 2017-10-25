@@ -1,7 +1,22 @@
-<div class="teamFour">
+<div class="teamFour shimmer" *ngIf="!(teamFour)">
     <div class="teamFour-wrapper">
         <home></home>
-        <div class="teamDetails" *ngIf="teamFour">
+        <div class="teamDetails">
+            <div class="member-detail">
+                <ul>
+                    <li *ngFor="let team1 of [1,2,3,4,5,6,7,8,9]" class="animated-background">
+                        <div class="id">{{team1.id}}</div>
+                        <div class="title">{{team1.title}}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teamFour" *ngIf="teamFour">
+    <div class="teamFour-wrapper">
+        <home></home>
+        <div class="teamDetails">
             <div class="member-detail">
                 <ul>
                     <li *ngFor="let team1 of  teamFour">
